@@ -1,0 +1,22 @@
+{
+  "name": "demo-remote-1",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/core": "20.3.0",
+    "@angular/router": "20.3.0",
+    "@softarc/native-federation-node": "3.3.5"
+  },
+  "devDependencies": {
+    "@angular-architects/native-federation": "20.1.6",
+    "@angular-devkit/build-angular": "20.3.4",
+    "@angular/build": "20.3.4",
+    "@angular/cli": "20.3.4",
+    "@angular/compiler-cli": "20.3.0",
+    "typescript": "~5.8.3"
+  }
+}
