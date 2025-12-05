@@ -1,4 +1,4 @@
-const { withNativeFederation } = require('@angular-architects/native-federation/config');
+const { withNativeFederation, share } = require('@angular-architects/native-federation/config');
 
 module.exports = withNativeFederation({
   name: 'demo-remote-1',
@@ -8,10 +8,18 @@ module.exports = withNativeFederation({
   },
 
   shared: {
-    '@angular/common': {
-      singleton: true,
-      strictVersion: true,
-      requiredVersion: 'auto'
-    }
+    ...share({
+      '@angular/core': {
+        singleton: true,
+        strictVersion: true,
+        requiredVersion: 'auto'
+      },
+      '@angular/common': {
+        singleton: true,
+        strictVersion: true,
+        requiredVersion: 'auto'
+      }
+    })
+
   }
 });
