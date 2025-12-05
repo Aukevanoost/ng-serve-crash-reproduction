@@ -7,21 +7,22 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/core": "^21.0.0",
-    "@angular/common": "^21.0.0",
-    "@angular/router": "^21.0.0"
+    "@angular/core": "20.3.0",
+    "@angular/common": "20.3.0",
+    "@angular/router": "20.3.0"
   },
   "overrides": {
-    "esbuild": "^0.26.0"
+    "esbuild": "~0.26.0"
   },
   "devDependencies": {
     "@softarc/native-federation": "3.4.1",
-    "@angular-architects/native-federation": "^21.0.2",
-    "@angular-devkit/build-angular": "^21.0.0",
-    "@angular/build": "^21.0.0",
-    "@angular/cli": "^21.0.0",
-    "@angular/compiler-cli": "^21.0.0",
-    "typescript": "~5.9.0",
+    "@angular-architects/native-federation": "21.0.2",
+    "@angular-devkit/build-angular": "20.3.4",
+    "@angular-devkit/architect": "^0.2000.0",
+    "@angular/build": "20.3.4",
+    "@angular/cli": "20.3.4",
+    "@angular/compiler-cli": "20.3.0",
+    "typescript": "~5.8.3",
     "oxc-parser": "^0.101.0"
   }
 }
