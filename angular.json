@@ -35,12 +35,12 @@
             "rebuildDelay": 0,
             "dev": true,
             "port": 0,
-            "cacheExternalArtifacts": true
+            "cacheExternalArtifacts": false
 
           }
         },
         "esbuild": {
-          "builder": "@angular-devkit/build-angular:application",
+          "builder": "@angular/build:application",
           "options": {
             "outputPath": "dist/demo-remote-1",
             "browser": "src/main.ts",
@@ -71,7 +71,7 @@
           "defaultConfiguration": "production"
         },
         "serve-original": {
-          "builder": "@angular-devkit/build-angular:dev-server",
+          "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
               "buildTarget": "demo-remote-1:esbuild:production"
